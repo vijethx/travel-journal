@@ -1,21 +1,19 @@
 export default function Card(props) {
-	const img = props.ImageUrl;
+	const cardImg = props.imageUrl;
 	return (
 		<div className="card-body">
-			<div className="card-img">
-				<img src={img} alt="" />
-				{/* <img src={require(${this.props.imageUrl})} alt="" /> */}
-
-				{/* <img src={`${props.ImageUrl}`} alt="My" /> */}
-			</div>
-
+			<img className="card-img" src={cardImg} alt="My" />
 			<div className="card-text">
 				<div className="text-line1">
-					<p className="path">📍</p>
-					<p className="location">{props.location}</p>
-					<a className="gmaps" href={props.googleMapsUrl}>
-						View on Google Maps
-					</a>
+					<p className="location">
+						<i className="fa fa-map-marker"></i>&nbsp;
+						{props.location.toUpperCase()}
+					</p>
+					<p className="gmaps">
+						<a className="gmaps" href={props.googleMapsUrl}>
+							View on Google Maps
+						</a>
+					</p>
 				</div>
 				<div className="text-line2">
 					<h1 className="title">{props.title}</h1>
