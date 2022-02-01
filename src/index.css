@@ -26,3 +26,9 @@ nav > h2 {
 	font-size: 15px;
 	font-weight: 500;
 }
+
+.card-img {
+	width: 125px;
+	height: 168px;
+	border: 1px solid red;
+}
