@@ -1,5 +1,6 @@
 # Travel Journal
-This is a travel journal, built with React
+This is a travel journal, built with React.
+
 ![Travel Journal](./travel-journal.png "Travel Journal")
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
